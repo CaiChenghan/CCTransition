@@ -1,0 +1,6 @@
+framework module Pods_CCTransition_Tests {
+  umbrella header "Pods-CCTransition_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

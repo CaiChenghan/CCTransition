@@ -1,0 +1,6 @@
+framework module Pods_CCTransition_Example {
+  umbrella header "Pods-CCTransition_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

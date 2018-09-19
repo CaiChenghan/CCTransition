@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CCTransition_Example' do
+  pod 'CCTransition', :path => '../'
+
+  target 'CCTransition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

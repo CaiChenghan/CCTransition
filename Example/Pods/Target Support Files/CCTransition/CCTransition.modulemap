@@ -1,0 +1,6 @@
+framework module CCTransition {
+  umbrella header "CCTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

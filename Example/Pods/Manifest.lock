@@ -1,0 +1,16 @@
+PODS:
+  - CCTransition (1.0.0)
+
+DEPENDENCIES:
+  - CCTransition (from `../`)
+
+EXTERNAL SOURCES:
+  CCTransition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CCTransition: 5b5c3e2bd5ba0a2f141c7f37bca9c676d494fcf6
+
+PODFILE CHECKSUM: c2064c275e81a8c08a4dd04effa2a820ac9119db
+
+COCOAPODS: 1.5.3
