@@ -1,7 +1,5 @@
 # CCTransition
 
-[![CI Status](https://img.shields.io/travis/CaiChenghan/CCTransition.svg?style=flat)](https://travis-ci.org/CaiChenghan/CCTransition)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
