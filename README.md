@@ -1,9 +1,6 @@
 # CCTransition
 
 [![CI Status](https://img.shields.io/travis/CaiChenghan/CCTransition.svg?style=flat)](https://travis-ci.org/CaiChenghan/CCTransition)
-[![Version](https://img.shields.io/cocoapods/v/CCTransition.svg?style=flat)](https://cocoapods.org/pods/CCTransition)
-[![License](https://img.shields.io/cocoapods/l/CCTransition.svg?style=flat)](https://cocoapods.org/pods/CCTransition)
-[![Platform](https://img.shields.io/cocoapods/p/CCTransition.svg?style=flat)](https://cocoapods.org/pods/CCTransition)
 
 ## Example
 
