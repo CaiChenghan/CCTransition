@@ -12,7 +12,13 @@ CCTransition is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CCTransition', :git => 'https://github.com/CaiChenghan/CCTransition.git', :tag => '1.0.0'
+platform :ios, '9.0'
+inhibit_all_warnings!
+source ‘https://github.com/CaiChenghan/CCRepo.git’
+source ‘https://github.com/CocoaPods/Specs.git’
+target 'FineHouse' do
+  pod 'CCTransition', '~> 1.0.0'
+end
 ```
 
 ## Author
