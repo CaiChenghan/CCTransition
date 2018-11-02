@@ -17,7 +17,7 @@ inhibit_all_warnings!
 source ‘https://github.com/CaiChenghan/CCRepo.git’
 source ‘https://github.com/CocoaPods/Specs.git’
 target 'FineHouse' do
-  pod 'CCTransition', '~> 1.0.0'
+  pod 'CCTransition', '~> 1.1.0'
 end
 ```
 

@@ -18,7 +18,7 @@
 
 + (void)swizzlePresentController {
     SEL originSelector = @selector(pushViewController:animated:);
-    SEL swizzledSelector = @selector(_pushViewController:animated:);
+    SEL swizzledSelector = @selector(_cc_pushViewController:animated:);
     Method originMethod = class_getInstanceMethod([self class], originSelector);
     Method swizzledMethod = class_getInstanceMethod([self class], swizzledSelector);
     BOOL success = class_addMethod([self class], originSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
@@ -29,11 +29,11 @@
     }
 }
 
-- (void)_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+- (void)_cc_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (viewController.transitionAnimator) {
         self.delegate = viewController.transitionAnimator;
     }
-    [self _pushViewController:viewController animated:animated];
+    [self _cc_pushViewController:viewController animated:animated];
 }
 
 @end

@@ -19,7 +19,7 @@ static char CCTransitionAnimatorKEY;
 
 + (void)swizzlePresentController {
     SEL originSelector = @selector(presentViewController:animated:completion:);
-    SEL swizzledSelector = @selector(_presentViewController:animated:completion:);
+    SEL swizzledSelector = @selector(_cc_presentViewController:animated:completion:);
     Method originMethod = class_getInstanceMethod([self class], originSelector);
     Method swizzledMethod = class_getInstanceMethod([self class], swizzledSelector);
     BOOL success = class_addMethod([self class], originSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
@@ -30,11 +30,11 @@ static char CCTransitionAnimatorKEY;
     }
 }
 
-- (void)_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
+- (void)_cc_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
     if (viewControllerToPresent.transitionAnimator) {
         viewControllerToPresent.transitioningDelegate = viewControllerToPresent.transitionAnimator;
     }
-    [self _presentViewController:viewControllerToPresent animated:flag completion:completion];
+    [self _cc_presentViewController:viewControllerToPresent animated:flag completion:completion];
 }
 
 - (void)setTransitionAnimator:(CCTransitionAnimator *)transitionAnimator {

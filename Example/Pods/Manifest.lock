@@ -1,5 +1,5 @@
 PODS:
-  - CCTransition (1.0.0)
+  - CCTransition (1.1.0)
 
 DEPENDENCIES:
   - CCTransition (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCTransition: 5b5c3e2bd5ba0a2f141c7f37bca9c676d494fcf6
+  CCTransition: 17971db80380157d8eee9e513f73817bf09326da
 
 PODFILE CHECKSUM: c2064c275e81a8c08a4dd04effa2a820ac9119db
 
